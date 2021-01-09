@@ -5,9 +5,8 @@ public class ChessBoard {
         return (Math.abs(x1 - x2) == Math.abs(y1 - y2)) ? Math.abs(x2 - x1) : 0;
     }
 
-    @SuppressWarnings("checkstyle:WhitespaceAfter")
     public static void main(String[] args) {
-        int cells = way(3,3,0 ,0);
+        int cells = way(3, 3,  0, 0);
         System.out.println("Количество клеток равно: " + cells);
     }
 }
