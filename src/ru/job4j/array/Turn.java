@@ -5,28 +5,15 @@ public class Turn {
         int temp1 = array[0];
         array[0] = array[array.length - 1];
         array[array.length - 1] = temp1;
-        if (array.length % 2 != 0) {
-            for (int index = 1; index < array.length - 1; index++) {
-                if (index == array.length - index - 1) {
+        for (int index = 1; index < array.length - 1; index++) {
+            if (index >= array.length - index - 1) {
                     break;
-                } else {
-                    int temp2 = array[index];
-                    array[index] = array[array.length - index - 1];
-                    array[array.length - index - 1] = temp2;
-                }
-            }
-        } else {
-            for (int index = 1; index < array.length - 1; index++) {
-                if (index > array.length - index - 1) {
-                    break;
-                } else {
-                    int temp2 = array[index];
-                    array[index] = array[array.length - index - 1];
-                    array[array.length - index - 1] = temp2;
-                }
+            } else {
+                int temp2 = array[index];
+                array[index] = array[array.length - index - 1];
+                array[array.length - index - 1] = temp2;
             }
         }
-
         return array;
     }
 }
