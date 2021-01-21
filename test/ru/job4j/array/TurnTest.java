@@ -8,9 +8,9 @@ public class TurnTest {
 
     @Test
     public void whenTurnArrayWithEvenAmountOfElementsThenTurnedArray() {
-        int[] input = new int[] {4, 1, 6, 2};
+        int[] input = new int[] {4, 1, 6, 2, 7, 8};
         int[] result = Turn.back(input);
-        int[] expect = new int[] {2, 6, 1, 4};
+        int[] expect = new int[] {8, 7, 2, 6, 1, 4};
         assertThat(result, is(expect));
     }
 
