@@ -40,7 +40,7 @@ public class MatrixCheckTest {
         assertThat(result, is(expect));
     }
 
-    /*@Test
+    @Test
     public void whenDataMonoByTrueThenTrue() {
         char[][] input = {
                 {' ', ' ', 'X', ' ', ' '},
@@ -77,5 +77,5 @@ public class MatrixCheckTest {
         };
         boolean result = MatrixCheck.isWin(input);
         assertThat(result, is(true));
-    }*/
+    }
 }
