@@ -9,5 +9,4 @@ public class Triangle {
         boolean result = exist(2.0, 2.0, 2.0);
         System.out.println(result);
     }
-
 }
